@@ -1,0 +1,19 @@
+train: /content/drive/MyDrive/skola/vlastni_neuronka_2/dataset/images/train
+val: /content/drive/MyDrive/skola/vlastni_neuronka_2/dataset/images/val
+
+nc: 4  # Počet tříd
+names: ['smrk', 'modřín', 'borovice', 'mrtvé dřevo']  # Názvy tříd v pořadí indexů
+
+# Argumentace dat
+augment:
+  flipud: 0.5  # Pravděpodobnost vertikálního převrácení
+  fliplr: 0.5  # Pravděpodobnost horizontálního převrácení
+  mosaic: 1.0  # Použití mozaiky augmentace
+  mixup: 0.5  # Použití mixup augmentace
+  hsv_h: 0.015  # HSV Hue augmentace
+  hsv_s: 0.7  # HSV Saturation augmentace
+  hsv_v: 0.4  # HSV Value augmentace
+  degrees: 0.0  # Rozsah náhodné rotace
+  translate: 0.1  # Rozsah náhodného posunu
+  scale: 0.5  # Rozsah náhodného zvětšení/zmenšení
+  shear: 0.0  # Rozsah náhodného zkosení
